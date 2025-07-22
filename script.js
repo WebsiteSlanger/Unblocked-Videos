@@ -35,22 +35,22 @@ const videos = [
     thumbnail: "https://img.youtube.com/vi/uxPO4mIuUAw/sddefault.jpg"
   },
   {
-    title: "I built a nuclear fusion reactor in my basement",
+    title: "CHINESE HORROR GAMES ARE AMAZING. | Dread Flats (Full Game)",
     videoId: "Jtm3IOp4yj4",
     thumbnail: "https://img.youtube.com/vi/Jtm3IOp4yj4/hqdefault.jpg"
   },
   {
-    title: "How this password cracker works",
+    title: "THIS NEW SPONGEBOB HORROR GAME IS ABSOLUTE INSANITY.",
     videoId: "-6QR7UwOHy4",
     thumbnail: "https://img.youtube.com/vi/-6QR7UwOHy4/hqdefault.jpg"
   },
   {
-    title: "How I Hacked YouTube Shorts",
+    title: "WORKING THE NIGHT SHIFT AS A PARK RANGER. | Last Report (Full Game)",
     videoId: "fpOE2JT5Lxs",
     thumbnail: "https://img.youtube.com/vi/fpOE2JT5Lxs/hqdefault.jpg"
   },
   {
-    title: "He Built A CPU From Transistors",
+    title: "The CLASSROOMS updated & added a HORRIFIC ENTITY. (KIDROOMS Update)",
     videoId: "30-KnawRoHQ",
     thumbnail: "https://img.youtube.com/vi/30-KnawRoHQ/hqdefault.jpg"
   }
@@ -67,13 +67,13 @@ function loadVideos(list) {
     const card = document.createElement('div');
     card.className = 'video-card';
     card.innerHTML = `
-      <img src="\${video.thumbnail}" alt="\${video.title}">
+      <img src="${video.thumbnail}" alt="${video.title}">
       <div class="info">
-        <div class="title">\${video.title}</div>
+        <div class="title">${video.title}</div>
       </div>
     `;
     card.addEventListener('click', () => {
-      mainVideo.src = \`https://www.youtube.com/embed/\${video.videoId}\`;
+      mainVideo.src = `https://www.youtube.com/embed/${video.videoId}`;
       mainTitle.textContent = video.title;
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
